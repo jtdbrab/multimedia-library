@@ -2,14 +2,15 @@
 
 #packages & libraries
 from rich import print
+import sqlite3
 
 from UserInterface import UserInterface
+from helpers import *
 
 def main():
-    print("Enter your name:")
-    username = input()
-    userinterface = UserInterface(username)
-    userinterface.startscreen()
+    while True:
+        userinterface = initialize_interface()
+        userinterface.startscreen()
 
 
 

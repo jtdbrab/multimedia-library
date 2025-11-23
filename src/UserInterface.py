@@ -6,6 +6,12 @@ class UserInterface():
         self.username = username
     
     def startscreen(self):
-        print(f"Welcome to [bold]Paper & Grooves[/bold], {self.username}")
-        print("What would you like to do?")
+        print(f"""
+        Welcome to [bold]Paper & Grooves[/bold], {self.username}
+        What would you like to do?
+        1. Add book
+        2. Remove book
+        3. Search
+        4. Quit
+        """)
 
