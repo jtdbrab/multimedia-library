@@ -1,10 +1,16 @@
 #!/usr/bin/env python
 
-#imports
+#packages & libraries
 from rich import print
 
+from UserInterface import UserInterface
+
 def main():
-    print("hello world")
+    print("Enter your name:")
+    username = input()
+    userinterface = UserInterface(username)
+    userinterface.startscreen()
+
 
 
 if __name__ == "__main__":
