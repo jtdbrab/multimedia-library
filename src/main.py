@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+#imports
+from rich import print
+
 def main():
     print("hello world")
 
