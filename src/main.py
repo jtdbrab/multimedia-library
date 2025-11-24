@@ -6,11 +6,11 @@ import sqlite3
 
 from UserInterface import UserInterface
 from helpers import *
+from DatabaseManager import *
 
 def main():
-    library = sqlite3.connect("library.db")
-    cur = library.cursor()
-    ui = initialize_interface()
+    db = DatabaseManager()
+    ui = initialize_interface(db)
     ui.run()
     
 

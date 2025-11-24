@@ -2,8 +2,9 @@
 from rich import print
 
 class UserInterface():
-    def __init__(self, username):
+    def __init__(self, username, db):
         self.username = username
+        self.db = db
     
     def run(self):
         running = True
