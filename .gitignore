@@ -34,3 +34,7 @@ ENV/
 env.bak/
 venv.bak/
 
+# others
+
+library.db
+

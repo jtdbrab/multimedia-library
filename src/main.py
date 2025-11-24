@@ -8,11 +8,11 @@ from UserInterface import UserInterface
 from helpers import *
 
 def main():
-    while True:
-        userinterface = initialize_interface()
-        userinterface.startscreen()
-
-
+    library = sqlite3.connect("library.db")
+    cur = library.cursor()
+    ui = initialize_interface()
+    ui.run()
+    
 
 if __name__ == "__main__":
     main()
